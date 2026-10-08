@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DFC — Deccan Fried Chicken. Choose your nearest location and explore the complete menu.">
+  <title>DFC — Deccan Fried Chicken</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+Telugu:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="shell site-nav">
+    <a class="brand" href="index.html" aria-label="DFC home">
+      <span class="brand-mark">DFC</span>
+      <span class="brand-copy">DECCAN<br>FRIED CHICKEN<small>డెక్కన్ ఫ్రైడ్ చికెన్</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="menu.html">Full menu</a>
+      <a href="#scan">Scan menu</a>
+      <a href="#branches">Branches</a>
+      <a href="#visit">Visit us</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="button sm" href="menu.html">View menu ↗</a>
+      <button class="icon-button" data-open-cart aria-label="Open selected items">🛍<span class="cart-count" data-cart-count>0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow">A Deccan classic, near you</div>
+          <h1>CRUNCH<br>WITH <em>KICK.</em></h1>
+          <p>Big, golden crunch with DFC's bold Deccan spice. Chicken, burgers, pizzas and full-on meals made for every kind of craving.</p>
+          <div class="location-picker"><label for="home-location">Choose your DFC location</label><select id="home-location" data-location-select aria-label="Choose a DFC location"></select></div>
+          <div class="hero-meta" aria-label="Outlet highlights"><span data-location-rating>Multiple DFC locations</span><span data-location-price>Menu varies by outlet</span><span data-location-hours>Choose a branch</span></div>
+          <div class="hero-ctas">
+            <a class="button" href="menu.html">Explore the full menu ↗</a>
+            <a class="button secondary" href="#scan">Scan QR menu</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Crispy fried chicken">
+          <div class="hero-orbit"></div>
+          <img class="hero-photo" src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1100&q=86" alt="Golden DFC-style crispy fried chicken">
+          <div class="round-sticker">MADE<br>FRESH<br>DAILY</div>
+          <div class="burst">HOT<br>&amp; CRISPY</div>
+        </div>
+      </div>
+      <div class="hero-strip">
+        <div class="shell hero-strip-inner">
+          <div class="place-info"><i>⌖</i><div><span data-location-name>Choose an outlet</span><strong data-location-address>Select a DFC location to see its address</strong></div></div>
+          <div class="place-info"><i>◷</i><div><span>Outlet hours</span><strong data-location-hours-long>Choose a branch</strong></div></div>
+          <a class="yellow-link" data-location-directions href="#branches">Choose a location ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-bar">
+      <div class="shell trust-grid">
+        <div><strong>5</strong><span>DFC locations</span></div>
+        <div><strong>VIZAG +</strong><span>Andhra Pradesh</span></div>
+        <div><strong>₹200+</strong><span>Starting range</span></div>
+        <div><strong>1 QR</strong><span>One full menu</span></div>
+      </div>
+    </section>
+
+    <section class="section shell">
+      <div class="section-head">
+        <h2>Favourites<br>on repeat.</h2>
+        <p>From our fiery hot wings to family-sized buckets, these are the DFC orders that keep the table happy.</p>
+      </div>
+      <div class="feature-grid">
+        <a class="feature-card" href="menu.html#group-quick-bites">
+          <img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=900&q=84" alt="Chicken hot wings">
+          <div class="feature-card-copy"><span>BESTSELLER</span><h3>Chicken Hot Wings</h3><p>Golden, juicy, seriously spicy.</p></div>
+        </a>
+        <a class="feature-card" href="menu.html#group-non-veg-burgers">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=84" alt="Chicken burger">
+          <div class="feature-card-copy"><span>FAN FAVOURITE</span><h3>Maharaja Burger</h3><p>Cheese, mayo, veggies and crunch.</p></div>
+        </a>
+        <a class="feature-card" href="menu.html#group-meals">
+          <img src="dfc-food-spread.png" alt="DFC Family Meal spread with fried chicken, burger, fries and wings">
+          <div class="feature-card-copy"><span>BIG APPETITE</span><h3>DFC Family Meal</h3><p>A spread built for the whole gang.</p></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="shell">
+        <div class="section-head">
+          <h2>THE DFC<br>SPREAD.</h2>
+          <p>Every kind of craving deserves its own close-up — from juicy wings and crispy chicken to loaded burgers and perfect sides.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-tile gallery-main"><img src="dfc-food-spread.png" alt="DFC-inspired fried chicken, fries, burger and wings spread"><span>The big DFC table</span></figure>
+          <figure class="gallery-tile gallery-top"><img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=1000&q=84" alt="Crispy fried chicken close-up"><span>Golden crunch</span></figure>
+          <figure class="gallery-tile gallery-small"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=520&q=84" alt="Seasoned fries"><span>Fries</span></figure>
+          <figure class="gallery-tile gallery-wide"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=84" alt="Fresh pizza"><span>Pizza cravings, covered</span></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section">
+      <div class="shell">
+        <div class="section-head">
+          <div class="review-intro"><div class="eyebrow">Customer love</div><h2>GOOD FOOD.<br>GOOD WORDS.</h2><p>Real highlights from customers who stopped by DFC for a crispy bite, a family treat, or a wings craving.</p></div>
+          <a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=Deccan+Fried+Chicken+Gajuwaka" target="_blank" rel="noreferrer">Read more reviews ↗</a>
+        </div>
+        <div class="review-grid">
+          <article class="review-card"><div><div class="quote-mark">“</div><blockquote>Good place for good food at good rates.</blockquote></div><div class="review-source"><span>Customer review highlight</span><strong>DFC customer</strong></div></article>
+          <article class="review-card"><div><div class="quote-mark">“</div><blockquote>The wings are good — a favourite for a quick, spicy bite.</blockquote></div><div class="review-source"><span>Customer review highlight</span><strong>DFC customer</strong></div></article>
+          <article class="review-card"><div><div class="quote-mark">“</div><blockquote>A reasonable place for a treat with friends and family.</blockquote></div><div class="review-source"><span>Customer review highlight</span><strong>DFC customer</strong></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="branches-section" id="branches">
+      <div class="shell">
+        <div class="section-head">
+          <div><div class="eyebrow">Find your nearest crunch</div><h2>MORE DFC<br>BRANCHES.</h2></div>
+          <p>DFC flavour travels across Vizag and beyond. Choose the outlet that is closest to your hunger.</p>
+        </div>
+        <div class="branch-grid">
+          <article class="branch-card">
+            <div class="branch-kicker"><span>Rushikonda</span><span class="branch-rating">3.9 ★ · 1.6K</span></div>
+            <h3>Deccan Fried Chicken</h3>
+            <p>SAGARNAGAR, RUSHIKONDA, DNO-101, Yendada, Endada, Andhra Pradesh 530045</p>
+            <div class="branch-details"><span><b>Price range</b>₹200–400</span><span><b>Closes</b>10:00 PM</span></div>
+            <a class="yellow-link" href="https://www.google.com/maps/search/?api=1&query=Deccan+Fried+Chicken+SAGARNAGAR+Rushikonda+Yendada" target="_blank" rel="noreferrer">Directions ↗</a>
+          </article>
+          <article class="branch-card">
+            <div class="branch-kicker"><span>Kurmannapalem</span><span class="branch-rating">4.1 ★ · 38</span></div>
+            <h3>Dakshin Fried Chicken</h3>
+            <p>Siddhartha Nagar, Kurmannapalem, Gajuwaka, Andhra Pradesh 530046</p>
+            <div class="branch-details"><span><b>Price range</b>₹200–400</span><span><b>Closes</b>9:30 PM</span></div>
+            <a class="yellow-link" href="https://www.google.com/maps/search/?api=1&query=Dakshin+Fried+Chicken+Siddhartha+Nagar+Kurmannapalem+Gajuwaka" target="_blank" rel="noreferrer">Directions ↗</a>
+          </article>
+          <article class="branch-card">
+            <div class="branch-kicker"><span>Rajamahendravaram</span><span class="branch-rating">3.6 ★ · 1.2K</span></div>
+            <h3>Deccan Fried Chicken</h3>
+            <p>Ground Floor, Biba Showroom Building, Anala Venkatappa Rao Rd, beside Vasan Eye Care, Gandhipuram, Rajamahendravaram 533103</p>
+            <div class="branch-details"><span><b>Price range</b>₹200–800</span><span><b>Closes</b>11:00 PM</span></div>
+            <a class="yellow-link" href="https://www.google.com/maps/search/?api=1&query=Deccan+Fried+Chicken+Gandhipuram+Rajamahendravaram" target="_blank" rel="noreferrer">Directions ↗</a>
+          </article>
+          <article class="branch-card">
+            <div class="branch-kicker"><span>Atchutapuram</span><span class="branch-rating">4.4 ★ · 19</span></div>
+            <h3>DFC Fried Chicken</h3>
+            <p>Anakapalli Road, Atchutapuram, Andhra Pradesh 531011</p>
+            <div class="branch-details"><span><b>Price range</b>₹200–400</span><span><b>Closes</b>9:30 PM</span></div>
+            <a class="yellow-link" href="https://www.google.com/maps/search/?api=1&query=DFC+Deccan+Fried+Chicken+Atchutapuram" target="_blank" rel="noreferrer">Directions ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="qr-banner" id="scan">
+      <div class="shell qr-layout">
+        <div>
+          <div class="eyebrow">Full menu, one scan away</div>
+          <h2>SCAN.<br>CRAVE. REPEAT.</h2>
+          <p>Point your camera at the QR code to open the complete DFC menu — categories, prices and every delicious detail, all in one beautiful mobile page.</p>
+          <a class="button cream" data-menu-link href="menu.html">Open DFC menu ↗</a>
+          <span class="qr-help" data-qr-help></span>
+        </div>
+        <a class="qr-card" data-menu-link href="menu.html" aria-label="Open the DFC menu">
+          <img data-menu-qr alt="QR code to the DFC website menu">
+          <small>Scan for the DFC website menu</small>
+          <code data-menu-url>Loading menu URL</code>
+        </a>
+      </div>
+    </section>
+
+    <section class="section shell" id="visit">
+      <div class="visit-card">
+        <div class="visit-details">
+          <div class="eyebrow">Come hungry</div>
+          <h2>Meet you<br>at DFC.</h2>
+          <div class="info-row"><i>⌖</i><div><b data-location-name>Choose your location</b><span data-location-address>Pick a DFC branch above for outlet details.</span></div></div>
+          <div class="info-row"><i>◷</i><div><b>Opening hours</b><span data-location-hours-long>Hours vary by branch</span></div></div>
+          <div class="info-row"><i>☏</i><div><b>Need a branch?</b><span><a href="#branches">View all DFC locations below</a></span></div></div>
+        </div>
+        <a class="map-art" data-location-directions href="#branches" aria-label="Choose a DFC location"><div class="map-pin"><span>DFC</span></div></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div><a class="brand" href="index.html"><span class="brand-mark">DFC</span><span class="brand-copy">DECCAN<br>FRIED CHICKEN</span></a><p>Big flavour, golden crunch and a little Deccan fire in every bite.</p></div>
+      <div><div class="footer-title">Explore</div><a href="menu.html">Full menu</a><a href="#scan">Scan menu QR</a><a href="#branches">More DFC branches</a><a href="#visit">Find the outlet</a></div>
+      <div><div class="footer-title">Order online</div><a href="https://www.swiggy.com/city/vizag/deccan-fried-chicken-gajuwaka-rest93790" target="_blank" rel="noreferrer">Swiggy · Gajuwaka ↗</a><a href="https://www.zomato.com/visakhapatnam/deccan-fried-chicken-gajuwaka-vizag" target="_blank" rel="noreferrer">Zomato · Gajuwaka ↗</a><a href="tel:+919014917378">Call DFC · 090149 17378</a></div>
+    </div>
+    <div class="shell footer-bottom">© 2026 Deccan Fried Chicken · Locations across Andhra Pradesh · Menu and prices may vary by outlet.</div>
+  </footer>
+
+  <div class="backdrop" id="drawer-backdrop" data-close-cart></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Your selected items">
+    <div class="drawer-head"><div><div class="eyebrow">Your selection</div><h2>THE CRAVING.</h2></div><button class="close-btn" data-close-cart aria-label="Close selected items">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-foot"><div class="subtotal"><span>Subtotal</span><span id="cart-subtotal">₹0</span></div><button class="button" style="width:100%" data-menu-ready>Save my selection</button><p class="cart-note">This is a menu preview. Confirm your final order with the DFC outlet.</p></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="menu-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
